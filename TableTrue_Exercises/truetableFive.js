@@ -30,7 +30,9 @@ if (moneyOne ==1 && moneyTwo =="2" ) {
 }else if (moneyOne==3 && moneyTwo==3) {
     alert("Voce terá  R$" + (quantity)+" em Reais " )
 }else{
- alert("algo de errado aconteceu")
+ alert("Algo deu errado")
+ console.log.console.error(error);
+ 
 }
 //==============================================================================
 
