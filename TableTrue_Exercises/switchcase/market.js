@@ -1,23 +1,43 @@
-var question = parseInt(prompt("Abaixo está o cardapio\n100- Cachorro quente R$9,80\n101- Bauru Simples R$5,60\n102- Bauru com ovo R$7,20\n103- Hamburguer R$12,30\n104- Cheeseburguer R$16,90\nDigite o codigo do produto para escolhe-lo"))
-var unitd = parseInt(prompt("Digite agora a quantidade "))
-
+//var question = parseInt(prompt("Abaixo está o cardapio\n100- Cachorro quente R$9,80\n101- Bauru Simples R$5,60\n102- Bauru com ovo R$7,20\n103- Hamburguer R$12,30\n104- Cheeseburguer R$16,90\n0-Sair\nDigite o codigo do produto para escolhe-lo"))
+//var unitd = parseInt(prompt("Digite agora a quantidade "))
+var sair =0
+//var question = parseInt(prompt("Abaixo está o cardapio\n100- Cachorro quente R$9,80\n101- Bauru Simples R$5,60\n102- Bauru com ovo R$7,20\n103- Hamburguer R$12,30\n104- Cheeseburguer R$16,90\n0-Sair\nDigite o codigo do produto para escolhe-lo"))
+while (sair ==0){
+var question = parseInt(prompt("Abaixo está o cardapio\n100- Cachorro quente R$9,80\n101- Bauru Simples R$5,60\n102- Bauru com ovo R$7,20\n103- Hamburguer R$12,30\n104- Cheeseburguer R$16,90\n0-Sair\nDigite o codigo do produto para escolhe-lo"))
 switch (question) {
     case 100:
-        document.write(`O Total a pagar será de ${unitd*9.80}`)
+        var unitd = parseInt(prompt("Digite agora a quantidade "))
+        var price = parseFloat(unitd*9.80).toFixed(2)
+        alert(`O Total a pagar será de R$${price}\n`)
         break;
     case 101:
-        document.write(`O Total a pagar será de ${unitd*5.60} `)
+        var unitd = parseInt(prompt("Digite agora a quantidade "))
+        var price = parseFloat(unitd*5.60).toFixed(2)
+        alert(`O Total a pagar será de R$${price}\n`)
         break;
     case 102:
-        document.write(`O Total a pagar será de ${unitd*7.20}`)
+        var unitd = parseInt(prompt("Digite agora a quantidade "))
+        var price = parseFloat(unitd*7.20).toFixed(2)
+        alert(`O Total a pagar será de R$${price}\n`)
         break;
     case 103:
-        document.write(`O Total a pagar será de ${unitd*12.30}`)
+        var unitd = parseInt(prompt("Digite agora a quantidade "))
+        var price = parseFloat(unitd*12.30).toFixed(2)
+        alert(`O Total a pagar dos Hamburgueres R$${price}\n`)
         break;
     case 104:
-        document.write(`O Total a pagar será de ${unitd*16.90}`)
+        var unitd = parseInt(prompt("Digite agora a quantidade "))
+        var price = parseFloat(unitd*16.90).toFixed(2)
+        alert(`O Total a pagar será de R$${price}\n`)
+        break;
+    case 0:
+        var sair = 1
         break;
     default:
-        document.write("Ocorreu algo errado!!")
         break;
+
 }
+var priceint = parseFloat(price+priceint).toFixed(2)
+var price = 0
+}
+document.write(`Valor total: R$${priceint} `)
