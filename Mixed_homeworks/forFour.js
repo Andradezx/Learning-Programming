@@ -1,7 +1,6 @@
 var note = parseFloat(0)
 var notehigh = parseFloat(0)
 var notemax = parseFloat(0)
-
 var notelow = parseFloat(Infinity)
 
 
