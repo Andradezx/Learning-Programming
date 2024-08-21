@@ -21,3 +21,8 @@ while(cont < 10){
  }
 
 document.write(`Maior valor sacado ${max} <br> Meno valor sacado ${min} <br> O total sacado no dia é ${soma}<br> A media sacada no dia foi ${soma/cont}`)
+
+
+
+
+
