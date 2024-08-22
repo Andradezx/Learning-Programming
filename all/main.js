@@ -1,6 +1,6 @@
 for (var cont = 0; cont = -Infinity; cont++){
 
-var globaloption = parseInt(prompt("1- Cambio de Moedas\n2- Calculadora de IMC\n3- Mercado\n4- Calculadora\n5- Tabuada\n6- Sistema de saque\n7- Conversor de °C Para F°\n8- Cadastrar Produtos\n9-Calculador de media "))
+var globaloption = parseInt(prompt("1- Cambio de Moedas\n2- Calculadora de IMC\n3- Mercado\n4- Calculadora\n5- Tabuada\n6- Sistema de saque\n7- Conversor de °C Para F°\n8- Cadastrar Produtos\n9- Calculador de media\n10- Cadastro de funcionario "))
 
 
 
@@ -231,11 +231,25 @@ if (globaloption == 3){
 
     }
 
-    ///if (globaloption == 10) {
+    if (globaloption == 10) {
 
+        var cont = 2400
+        const date = new Date();
+        const day = date.getDate();
+        const month = date.getMonth();
+        const years = date.getFullYear();
+        const hours = date.getHours();
+        const minuts = date.getMinutes();
+        
+        while(cont <= 2415){
+            var source =  prompt("Digite seu nome")
+            cont++
+            alert(`A sua matricula é\n${cont}\n Data: ${day}/${month+1}/${years}  Horário: (${hours}:${minuts}) \n`)
+        
+        
+        }
 
-   // }
-
+    }
  }
 
 
