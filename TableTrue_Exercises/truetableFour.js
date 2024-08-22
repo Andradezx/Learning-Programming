@@ -1,4 +1,6 @@
 
+//if (globaloption == 2){
+
 var weight =  parseInt(prompt("| Digite o seu peso ? "))
 var height = parseFloat(prompt("| Qual a sua altura ? ")).toFixed(2)
 var calculator = weight / (height*height)
@@ -18,3 +20,4 @@ alert("| Obesidade garu I")
     alert("|Obesidade grau III")
 
 }
+//}

@@ -1,3 +1,4 @@
+//if (globaloption == 1){
 ////VARIAVEIS
 var moneyOne = parseFloat(prompt("Qual É a sua moeda\n 1- Dolar\n 2- Euro\n 3- Real "))
 var quantity = parseFloat(prompt("Digite o valor")).toFixed(2)
@@ -34,6 +35,7 @@ if (moneyOne ==1 && moneyTwo =="2" ) {
  console.log.console.error(error);
  
 }
+//}
 //==============================================================================
 
 

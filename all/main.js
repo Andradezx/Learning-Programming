@@ -1,6 +1,6 @@
 for (var cont = 0; cont = -Infinity; cont++){
 
-var globaloption = parseInt(prompt("1-Cambio de Moedas\n2-Calculadora de IMC\n3-Mercado\n4-Calculadora "))
+var globaloption = parseInt(prompt("1- Cambio de Moedas\n2- Calculadora de IMC\n3- Mercado\n4- Calculadora\n5- Tabuada\n6- Sistema de saque\n7- Conversor de °C Para F°\n8- Cadastrar Produtos\n9-Calculador de media "))
 
 
 
@@ -105,7 +105,6 @@ if (globaloption == 3){
     document.write(`Valor total: R$${priceint} `)
 
     }
-    
     if (globaloption == 4){
         
     var question = parseInt(prompt("Qual conta voce deseja fazer \n1-Adição\n2-Subtração\n3-Divisão\n4-Porcentagem"))
@@ -114,25 +113,137 @@ if (globaloption == 3){
 
     switch (question) {
         case 1:
-            document.write(`O resultado de Adição é ${number+numberTwo}`)
+            alert(`O resultado de Adição é ${number+numberTwo}`)
             break;
         case 2: 
-            document.write(`O Resultado desse Subtração ${number-numberTwo}`)
+            alert(`O Resultado desse Subtração ${number-numberTwo}`)
             break;
         case 3:
-            document.write(`O resultado dessa Divisão é ${number/numberTwo}`)
+            alert(`O resultado dessa Divisão é ${number/numberTwo}`)
             break;
         case 4:
-            document.write(`O resultado em porcentagem ${number/100 *numberTwo}`)
+            alert(`O resultado em porcentagem ${number/100 *numberTwo}`)
             break;
 
         default:
-            document.write("ALGO DEU ERRADO!!")
+            alert("ALGO DEU ERRADO!!")
             break;
 }
 
     }
 
+    if (globaloption == 5) {
+    var number = parseInt(prompt("Digite um numero da tabuada que deseja"))
+    var cont = 0 
+
+    while(cont < 10){
+        cont+=1
+        alert(`\n${number}x${cont} = ${number*cont}\n`)
+        
+    }
+}
+
+  if (globaloption == 6) {
+    var rept = 0
+        var max = parseFloat(0)
+        var min = parseFloat(Infinity)
+        var soma = parseFloat(0)
+
+        while(rept < 10){
+        var sac = parseFloat(prompt("Digite o quanto deseja sacar "))
+        var soma = (sac+soma)
+        rept+=1
+
+        if (sac > max){
+            var max = sac 
+        }
+        if (sac < min) {
+            var min = sac 
+
+        }   
+        
+
+        }
+
+        alert(`Maior valor sacado ${max} \n Meno valor sacado ${min} \n O total sacado no dia é ${soma}\n A media sacada no dia foi ${soma/cont}`)
+
+
+
+    }
+    if (globaloption == 7 ){
+
+     var rept5 = 0
+
+    while(rept5 <= 100){
+       alert(`${rept5}°C   ${(rept5*1.8)+31.}°F \n`)
+        rept5+=10
+
+}
+
     }
 
- 
+ if (globaloption == 8){
+   
+    var pricemax  = parseFloat(0)
+    for (var rept4 = 1; rept4 <=Infinity; rept4++ ) {
+    var nameProduct = prompt("Digite o nome do produto")
+    var priceProduct = parseFloat(prompt("Digite o valor"))
+    
+    if (priceProduct > pricemax){
+        var pricemax = priceProduct
+        var nameProducthigh = nameProduct
+
+    }
+    var mensage = parseInt(prompt("Deseja contionar\n1-Sim\n2-Não"))
+
+    if (mensage == 2 ) {
+        alert(`O produto mais caro foi: \n  ${nameProducthigh} R$ ${pricemax}`)
+    break
+   
+ }
+}
+
+
+ }
+
+ if (globaloption == 9) {
+    var rept6 = 1
+    var calc2 = parseFloat(0)
+    
+    while(rept6 <= 4 ){
+    var students = parseFloat(prompt("Digite a nota do "+rept6+"° Bimestre do "))
+       var calc2 = (calc2+students)
+       var calculator = (calc2) /4
+        rept6+=1
+
+    }
+   // var calculator = (calc2) /4
+        if (calculator >= 6){
+        alert(`Sua media foi de  ${calculator}\n Voce passou!!`)
+        
+    }else if (calculator < 6) {
+        alert(`Sua media foi de ${calculator}\n Voce Reprovou!!`)
+
+     } else {
+      alert("error")
+     }
+
+
+    }
+
+    if (globaloption == 10) {
+        
+
+    }
+
+ }
+
+
+  
+
+    
+
+        
+    
+
+    
