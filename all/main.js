@@ -231,10 +231,10 @@ if (globaloption == 3){
 
     }
 
-    if (globaloption == 10) {
-        
+    ///if (globaloption == 10) {
 
-    }
+
+   // }
 
  }
 
