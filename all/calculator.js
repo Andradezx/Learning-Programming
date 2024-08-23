@@ -9,20 +9,20 @@ var numberTwo = parseFloat(prompt("Digite o Segundo numero"))
 
 switch (question) {
     case 1:
-        document.getElementById("task1").textContent=(`O resultado de Adição é ${number+numberTwo}`)
+       alert(`O resultado de Adição é ${number+numberTwo}`)
         break;
     case 2: 
-        document.getElementById("task1").textContent=(`O Resultado desse Subtração ${number-numberTwo}`)
+       alert(`O Resultado desse Subtração ${number-numberTwo}`)
          break;
     case 3:
-        document.getElementById("task1").textContent=(`O resultado dessa Divisão é ${number/numberTwo}`)
+       alert(`O resultado dessa Divisão é ${number/numberTwo}`)
          break;
     case 4:
-        document.getElementById("task1").textContent=(`O resultado em porcentagem ${number/100 *numberTwo}`)
+       alert(`O resultado em porcentagem ${number/100 *numberTwo}`)
          break;
 
     default:
-        document.getElementById("task1").textContent=("ALGO DEU ERRADO!!")
+       alert("ALGO DEU ERRADO!!")
         break;
 }
 }
