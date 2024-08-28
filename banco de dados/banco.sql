@@ -39,8 +39,8 @@ nome_titulo CHAR(50) NOT NULL,
 ano NUMERIC(4),
 codigo_categoria INT,
 codigo_classe INT,
-FOREIGN KEY (codigo_categoria) REFERENCES tbCategoria(codigo_categoria) ON DELETE CASCADE ON UPDATE CASCADE,
-FOREIGN KEY (codigo_classe) REFERENCES tbClasse(codigo_classe) ON DELETE CASCADE ON UPDATE CASCADE
+CONSTRAINT pk_tbtitulo_tbcategoria  FOREIGN KEY (codigo_categoria) REFERENCES tbCategoria(codigo_categoria), #modelos certo a ser seguido
+CONSTRAINT pk_tbtitulo_tbclasse FOREIGN KEY (codigo_classe) REFERENCES tbClasse(codigo_classe) ON DELETE CASCADE ON UPDATE CASCADE
 );
  
 
