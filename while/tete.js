@@ -14,11 +14,12 @@
 
 
 
-var i = 0
-
+var i = 1
+var dg = ""
 while(i < 6){
 
 var digite = prompt("Digite a sua senha")
+var dg = dg+digite
 
 // if (digite !=="a" || digite !=="A" || digite !=="e" || digite !=="E"  || digite !=="i"  || digite !=="o" || digite !=="O" || digite !=="U" || digite !=="U"){
 //     alert("DIGITE UMA SENHA VALIDA") 
@@ -37,7 +38,9 @@ var cript4 = 0
 }
 
 i+=1
-alert(` ${cript1} ${cript2} ${cript3} ${cript4} ${cript5} `)
+//alert(` ${cript1} ${cript2} ${cript3} ${cript4} ${cript5} `)
   
 
 }
+alert(` ${cript1} ${cript2} ${cript3} ${cript4} ${cript5} `)
+alert(`${dg}`)
