@@ -23,6 +23,4 @@ if (bread >= 10 && cheese >=1){
 
 
 
-
-
 }
