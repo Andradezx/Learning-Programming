@@ -16,7 +16,7 @@ function school(){
 
         if (calc < 7){  
                document.getElementById('result').value = (`Voce não passou de ano sua media foi ${calc} REPROVADO`)
-              }else if (calc >7){
+              }else if (calc >=7){
                  document.getElementById('result').value = (`Voce passou de de ano sua media foi ${calc} APROVADO`)
             
               }
