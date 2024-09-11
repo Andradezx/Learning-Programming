@@ -28,7 +28,7 @@ CONSTRAINT PK_tbPersonaAutor FOREIGN KEY (codigo_autor) REFERENCES tbAutor(codig
 );
 
 CREATE TABLE tbCapitulo(
-codigo_capitulo SMALLINT UNSIGNED AUTO_INCREMENT NOT NULL,
+codigo_capitulo MEDIUMINT UNSIGNED AUTO_INCREMENT NOT NULL,
 nome_capitulo VARCHAR(30) NOT NULL,
 data_exibicao_capitulo DATE NOT NULL,
 codigo_novela SMALLINT UNSIGNED AUTO_INCREMENT NOT NULL,
