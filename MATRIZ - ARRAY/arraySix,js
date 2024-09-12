@@ -1,0 +1,24 @@
+var A = []
+var B = []
+var C = []
+var calculator = parseFloat(0)
+var calculator2 = parseFloat(0)
+
+for (let i = 0; i <5; i++){
+   A.push(prompt("Digite algo"))
+   calculator = calculator+A[i]
+}
+console.table(A)
+
+for (let i = 0; i <5; i++){
+    B.push(prompt("Digite algo"))
+    calculator2 = calculator+B[i]
+
+}
+console.table(B)
+
+
+for (let i= 0; i < 5; i++) {
+    document.write(`${A[i]} x ${B[i]}    = ${A[i]*B[i]},<br>`)
+
+}
