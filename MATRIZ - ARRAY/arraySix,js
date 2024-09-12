@@ -6,7 +6,6 @@ var calculator2 = parseFloat(0)
 
 
 
-
 for (let i = 0; i <5; i++){
    A.push(prompt("Digite algo"))
    calculator = calculator+A[i]
