@@ -1,7 +1,7 @@
 var numbers = []
 
 for (let i = 0 ; i < 10;i++){
-numbers.push(parseInt(prompt('Digite um numero')))
+numbers.push(parseInt(prompt('Digite um numero'))) 
 
 }
 var myreverseNumbers = numbers.slice().reverse();
