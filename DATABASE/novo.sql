@@ -60,13 +60,15 @@ INSERT INTO tbator
 VALUES
 (100,'Fernando Souza','28','Campinas-SP','60000','M'),
 (101,'Roberty Downey Jr','58','New York','10000000','M'),
-(102,'Sam Adams','43','New Jearsey','1000000','M');
+(102,'Sam Adams','43','New Jearsey','1000000','M'),
+(103,'Mery Jane','43','New Jearsey','1000','F');
 
 INSERT INTO tbPersonagem
 VALUES 
 (500,'Julios','40','Pessima','102'),
 (501,'Tony Stark','45','Otima','101'),
 (502,'Frank Stone','30','Bom',100);
+
 
 INSERT INTO tbNovelaPersonagem
 VALUES 
@@ -82,7 +84,7 @@ VALUES
 
 # Exercício 3
 
-SELECT tbNovela.codigo_novela, nome_novela, data_ultimo_capitulo FROM tbNovela
+SELECT tbNovela.codigo_novela AS 'Registro Novela', nome_novela AS 'Nome Novela', data_ultimo_capitulo AS 'Ultimo Capitulo' FROM tbNovela
 WHERE tbNovela.codigo_novela = '1';
 
 #SELECT tbNovela.codigo_novela, tbNovela.nome_novela, data_exibicao_capitulo
@@ -126,17 +128,46 @@ INNER JOIN tbator ON tbator.codigo_ator = tbPersonagem.codigo_ator
 WHERE tbator.nome_ator = 'Roberty Downey Jr';
 
 # Exercício 8
-
-
-
+SELECT P.codigo_personagem, P.nome_personagem, P.idade_personagem, P.situacao_financeira_personagem
+FROM tbPersonagem P
+ORDER BY P.codigo_personagem ASC , P.nome_personagem ASC, P.idade_personagem  ASC, P.situacao_financeira_personagem ASC;
 
 
 # Exercício 9
+
+SELECT P.codigo_personagem, P.nome_personagem, P.idade_personagem, P.situacao_financeira_personagem
+FROM tbPersonagem P
+ORDER BY P.codigo_personagem  , P.nome_personagem , P.idade_personagem DESC , P.situacao_financeira_personagem ;
+
 # Exercício 10
+SELECT COUNT(DISTINCT A.codigo_ator) 'Atores Cadastrados'
+FROM tbAtor A;
+
+
 # Exercício 11
+SELECT COUNT(DISTINCT N.codigo_novela) 'Registro Novela'
+FROM tbNovela N;
+
+
 # Exercício 12
+
+SELECT N.nome_novela AS 'Nome da Novela', COUNT(C.codigo_capitulo) AS 'Quantidade de Capítulos'
+FROM tbCapitulo C
+INNER JOIN tbNovela N ON C.codigo_novela = N.codigo_novela
+GROUP BY N.nome_novela;
+
+
+
 # Exercício 13
+
+SELECT  COUNT(DISTINCT A.codigo_ator) 'Atores', A.sexo_ator 'Sexo'
+FROM tbAtor A
+WHERE A.sexo_ator = 'F';
+
 # Exercício 14
+
+
+
 # Exercício 15
 # Exercício 16
 # Exercício 17
