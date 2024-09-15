@@ -49,7 +49,7 @@ ENGINE = InnoDB;
 -- Table `tbFarmacia`.`tbClientes`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `tbFarmacia`.`tbClientes` (
-  `codgio_cliente` INT NOT NULL,
+  `codgio_cliente` SMALLINT NOT NULL,
   `nome_cliente` VARCHAR(45) NULL,
   `rua_cliente` VARCHAR(45) NULL,
   `logadouro_cliente` VARCHAR(45) NULL,
@@ -63,9 +63,9 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `tbFarmacia`.`tbParcelado` (
   `valor_parcela` INT NOT NULL,
-  `qtd_parcela` INT NOT NULL,
+  `qtd_parcela` TINYINT NOT NULL,
   `tbCompra_codigo_compra` INT NOT NULL,
-  `tbClientes_codgio_cliente` INT NOT NULL,
+  `tbClientes_codgio_cliente`SMALLINT NOT NULL,
   PRIMARY KEY (`tbCompra_codigo_compra`),
   CONSTRAINT `fk_tbParcelado_tbCompra1`
     FOREIGN KEY (`tbCompra_codigo_compra`)
@@ -84,7 +84,7 @@ ENGINE = InnoDB;
 -- Table `tbFarmacia`.`tbAvista`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `tbFarmacia`.`tbAvista` (
-  `valor_desconto` INT NOT NULL,
+  `valor_desconto` TINYINT NOT NULL,
   `total_compra_desconto` INT NOT NULL,
   `tbCompra_codigo_compra` INT NOT NULL,
   PRIMARY KEY (`tbCompra_codigo_compra`),
@@ -101,7 +101,7 @@ ENGINE = InnoDB;
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS `tbFarmacia`.`tbTelefoneCliente` (
   `telefone_cliente` INT NOT NULL,
-  `tbClientes_codgio_cliente` INT NOT NULL,
+  `tbClientes_codgio_cliente` SMALLINT NOT NULL,
   CONSTRAINT `fk_tbTelefoneCliente_tbClientes1`
     FOREIGN KEY (`tbClientes_codgio_cliente`)
     REFERENCES `tbFarmacia`.`tbClientes` (`codgio_cliente`)
