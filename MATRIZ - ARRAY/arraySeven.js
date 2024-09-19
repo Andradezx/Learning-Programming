@@ -3,8 +3,6 @@ var B = []
 var aluno 
 var nota 
 
-
-
 for (let i = 0; i < 5; i++){
 A.push(prompt(`Digite o nome do ${i+1}° Aluno`))
  aluno = aluno+A[i]
