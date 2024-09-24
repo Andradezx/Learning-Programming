@@ -12,6 +12,7 @@ A.push(prompt(`Digite o nome do ${i+1}° Aluno`))
 for (let j = 0; j < 5; j++){
     B.push(parseInt(prompt(`Digite a nota Do ${A[j]}`)))
     nota = nota+B[j]
+    
 }
 
 
