@@ -8,7 +8,6 @@ function Result(){
      var Product = parseFloat(document.getElementById(`a`).value)
      var Desc = parseFloat(document.getElementById(`b`).value)
     var calc = Product -  ((Product / 100) * Desc)
-    var cacl2 = calc - Product
-    document.getElementById("c").innerHTML = "Valor do produto ficará "+calc2+"o Desconto é "+calc
+    document.getElementById("c").innerHTML = ("Valor do produto ficará "+calc)
 
 }
