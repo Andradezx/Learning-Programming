@@ -1,0 +1,37 @@
+#teste .btn {
+ color: white; 
+background-color: rgb(159, 28, 211); 
+border-color: rgb(207, 122, 247);
+}
+
+
+#inputEmail4 {
+    color: rgb(103, 102, 104);
+    border-color: rgb(244, 218, 255);   
+    
+}
+
+#inputPassword4 {
+    border-color: rgb(244, 218, 255); 
+}
+
+#inputAddress {
+
+    border-color: rgb(244, 218, 255); 
+}
+#inputAddress2{
+    border-color: rgb(244, 218, 255); 
+}
+#inputCity{
+    border-color: rgb(244, 218, 255); 
+}
+#inputState{
+    border-color: rgb(244, 218, 255); 
+}
+#gridCheck{
+    border-color: rgb(0, 0, 0);
+    cursor: pointer;
+    pe
+/* #box {
+ bakc
+} */
