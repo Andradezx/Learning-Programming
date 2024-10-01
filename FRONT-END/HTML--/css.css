@@ -28,10 +28,40 @@ border-color: rgb(207, 122, 247);
 #inputState{
     border-color: rgb(244, 218, 255); 
 }
-#gridCheck{
-    border-color: rgb(0, 0, 0);
-    cursor: pointer;
-    pe
+
+/* Estilizar o checkbox quando marcado */
+.form-check-input:checked {
+    border: #424242;
+    accent-color: #ff0000; /* Cor do checkbox quando marcado */
+    box-shadow: 0 0 5px rgba(255, 17, 0, 0.5), 0 0 10px rgba(255, 0, 0, 0.3); /* Efeito de aura */
+}
+
+/* Se quiser alterar a borda ou a cor do fundo */
+.form-check-input:checked {
+    border: #ae00ff;
+    background-color: #ae00ff; /* Cor de fundo ao marcar */
+    border-color: #ae00ff; /* Cor da borda ao marcar */
+    box-shadow: 0 0 5px rgba(140, 0, 255, 0.5), 0 0 10px rgba(153, 0, 255, 0.3); /* Efeito de aura */
+}
+
+/* Efeito de aura ao focar (clicar) no checkbox */
+.form-check-input:focus {
+    box-shadow: 0 0 5px rgba(212, 0, 255, 0.5), 0 0 10px rgba(162, 0, 255, 0.3); /* Efeito de aura ao focar */
+}
+
+/* Para personalizar a borda quando não está marcado */
+.form-check-input {
+    border-color: #d533eb; /* Cor da borda padrão */
+    box-shadow: 0 0 5px rgba(195, 0, 255, 0.3); /* Efeito de aura padrão */
+
+}
+
+
+
+
+
+
+
 /* #box {
  bakc
 } */
