@@ -1,0 +1,14 @@
+#email {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+    color: rgb(107, 107, 107);
+    border-color: rgb(190, 53, 253);
+
+}
+
+#password{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 15px;
+    color: rgb(107, 107, 107);
+    border-color: rgb(190, 53, 253);
+}
