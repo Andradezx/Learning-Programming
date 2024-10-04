@@ -1,14 +1,53 @@
+
+#divzinha{
+    margin-top: 150px;
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+
+   
+}
+
+ /* input[type="email"],input[type="password"]{
+   width: 100%;
+   padding: 10px;
+   margin-bottom: 20px;
+   border: 1px;
+ } */
+
 #email {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:  Arial;
     border-radius: 15px;
     color: rgb(107, 107, 107);
     border-color: rgb(190, 53, 253);
+    /* width: 200px; Define a largura do input */
 
 }
 
+
+#email:hover{
+box-shadow: 0 0 3px blueviolet;
+}
+
 #password{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: Arial;
     border-radius: 15px;
     color: rgb(107, 107, 107);
     border-color: rgb(190, 53, 253);
+    width: 150px;
+}
+
+#password:hover{
+    box-shadow: 0 0 3px blueviolet;
+    }
+
+#bo{
+   font-family: Arial;
+   color: rgb(0, 0, 0); 
+   border-color: blueviolet;
+}
+
+#bo:hover{
+    background-color: rgb(137, 43, 226);
 }
