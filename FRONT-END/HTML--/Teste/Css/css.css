@@ -1,31 +1,69 @@
-#teste .btn {
+/* #teste .btn {
  color: white; 
 background-color: rgb(159, 28, 211); 
 border-color: rgb(207, 122, 247);
-}
+} */
 
 
 #inputEmail4 {
+    width: 450px;
     color: rgb(103, 102, 104);
     border-color: rgb(244, 218, 255);   
     
 }
+#divemail{
+    gap: 20px; /* Espaço entre as divs */
+    width: 450px;
+    margin: 50px;
+}
+
+.col-12 .btn{
+    color: white; 
+    background-color: rgb(159, 28, 211); 
+    border-color: rgb(207, 122, 247);
+}
+
+.col-12 .btn:hover{
+    color:blueviolet;
+    background-color: rgba(255, 255, 255, 0);
+}
+#divsenha{
+ justify-items: center;   
+}
+
+#divcity{
+    justify-items: center;   
+    width: 450px;
+    gap: 20px; /* Espaço entre as divs */
+}
+
+#divcod{
+    justify-items: center;   
+    width: 450px;
+    gap: 20px; /* Espaço entre as divs */
+    
+}
 
 #inputPassword4 {
+    width: 450px;
     border-color: rgb(244, 218, 255); 
 }
 
 #inputAddress {
-
+    width: 450px;
     border-color: rgb(244, 218, 255); 
 }
+
 #inputAddress2{
+    width: 450px;
     border-color: rgb(244, 218, 255); 
 }
 #inputCity{
+    width: 450px;
     border-color: rgb(244, 218, 255); 
 }
 #inputState{
+    width: 450px;
     border-color: rgb(244, 218, 255); 
 }
 
@@ -47,6 +85,13 @@ border-color: rgb(207, 122, 247);
 /* Efeito de aura ao focar (clicar) no checkbox */
 .form-check-input:focus {
     box-shadow: 0 0 5px rgba(212, 0, 255, 0.5), 0 0 10px rgba(162, 0, 255, 0.3); /* Efeito de aura ao focar */
+}
+
+#gridCheck{
+border-color: blueviolet
+}
+#gridCheck:hover{
+   border-color: blueviolet
 }
 
 /* Para personalizar a borda quando não está marcado */

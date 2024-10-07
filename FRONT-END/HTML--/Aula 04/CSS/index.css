@@ -1,0 +1,66 @@
+
+.divt {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    height:  fit-content;
+    color: white;
+    background-color: #226160;
+    padding: 20px;
+    border-radius: 5px;
+}
+.divt2{
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.info {
+    text-align: center;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: 0 0 5px #226160;
+    width: 900px;
+    
+
+}
+
+#h2m{
+    font-size: 20px;
+}
+.d-grid .btn{
+    margin: 20px auto;
+}
+
+#btn1{
+  color: rgb(88, 88, 88);
+   border-color: #d0a465;
+   background-color: #22616000;
+}
+#btn1:hover{
+    color: white;
+   background-color: #d0a465;;
+}
+
+#btn2{
+    color: rgb(88, 88, 88);
+   border-color: #a95f4d;
+   background-color: #22616000;
+}
+#btn2:hover{
+    color: white;
+   background-color: #a95f4d;;
+}
+
+
+.h3bm{
+    margin: auto;
+    text-align: center;
+}
+/* Remove margens dos títulos */
+h1, h3 {
+    margin: 0; /* Remove a margem padrão */
+}
+

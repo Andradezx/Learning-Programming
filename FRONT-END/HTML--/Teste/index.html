@@ -11,24 +11,24 @@
 </head>
 <body>
     <br>
-    <form class="row g-3">
+    <form class="row g-3" id="divemail">
         <div class="col-md-6">
           <label for="inputEmail4" class="form-label">Email</label>
           <input type="email" class="form-control" id="inputEmail4">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="divsenha">
           <label for="inputPassword4" class="form-label">Senha</label>
           <input type="password" class="form-control" id="inputPassword4">
         </div>
         <div class="col-12">
           <label for="inputAddress" class="form-label">Endereço</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          <input type="text" class="form-control" id="inputAddress" placeholder="Ex: Casa 1">
         </div>
         <div class="col-12">
           <label for="inputAddress2" class="form-label">Endereço 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Ex: Casa 2">
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6" id="divcity">
           <label for="inputCity" class="form-label">Cidade</label>
           <input type="text" class="form-control" id="inputCity">
         </div>
@@ -40,7 +40,7 @@
             <option>...</option>
           </select>
         </div>
-        <div class="col-md-2">
+        <div class="col-md-2" id="divcod">
           <label for="inputZip" class="form-label">Codigo postal</label>
           <input type="text" class="form-control" id="inputZip">
         </div>
@@ -53,8 +53,8 @@
           </div>
         </div>
         <div class="col-12" id="teste">
-            <button type="submit" class="btn btn-primary btn-lg">
-                <i class="fas fa-paper-plane"></i> Enviar Informações
+            <button type="submit" id="bo" class="btn btn-primary btn-lg">
+              <i class="fas fa-paper-plane"></i> Enviar Informações
             </button>
         </div>
     </form>
