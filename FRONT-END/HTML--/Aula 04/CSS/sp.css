@@ -1,0 +1,20 @@
+.img-table {
+    width: 75px; /* Ajuste a largura conforme necessário */
+    height: auto; /* Mantém a proporção */
+    margin-right: 15px; /* Espaço entre a imagem e o texto */
+    vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
+}
+
+.img-table:hover{
+    transform: scale(2.9);
+}
+
+#btn1{
+    color: rgb(88, 88, 88);
+     border-color: #d0a465;
+     background-color: #22616000;
+  }
+  #btn1:hover{
+      color: white;
+     background-color: #d0a465;;
+  }
