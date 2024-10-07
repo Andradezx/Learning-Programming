@@ -3,6 +3,7 @@
     height: auto; /* Mantém a proporção */
     margin-right: 15px; /* Espaço entre a imagem e o texto */
     vertical-align: middle; /* Alinha verticalmente a imagem com o texto */
+    border-radius: 5px;
 }
 
 .img-table:hover{
