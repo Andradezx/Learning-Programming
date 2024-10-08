@@ -1,4 +1,6 @@
 .img-table {
+    margin: 20px;
+    margin-left: 50px;
     width: 75px; /* Ajuste a largura conforme necessário */
     height: auto; /* Mantém a proporção */
     margin-right: 15px; /* Espaço entre a imagem e o texto */
@@ -7,14 +9,142 @@
 }
 
 .img-table:hover{
-    transform: scale(2.9);
+    transform: scale(2.1);
+    border-color: #226160;
+    box-shadow: 0 0 50px #226160;
+    cursor: pointer;
 }
 
+
+
+.table th.filme {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    width: 150px;
+    background-color: #d0a465; /* Cor de fundo específica para a coluna Filme */
+    color: #ffffff; /* Cor do texto, se necessário */
+}
+
+.table th.sessao {
+    width: 150px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #a95f4d; /* Cor de fundo específica para a coluna Filme */
+    color: #ffffff; /* Cor do texto, se necessário */
+}
+
+.table th.Salas {
+    width: 150px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #222222; /* Cor de fundo específica para a coluna Filme */
+    color: #ffffff; /* Cor do texto, se necessário */
+}
+
+.table th.teste {
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #226160; /* Cor de fundo específica para a coluna Filme */
+    color: #ffffff; /* Cor do texto, se necessário */
+}
+
+.table th.day {
+    justify-content: space-between; /* Espaço igual entre os elementos */
+    width: 150px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    background-color: #d0a465; /* Cor de fundo específica para a coluna Filme */
+    color: #ffffff; /* Cor do texto, se necessário */
+}
+.tb1{
+    padding: auto;
+}
+.btn.btn-outline-warning {
+ color: #222222;
+ border-color: #222222;
+ margin-top: 50px;
+ /* margin: auto; */
+}
+
+.btn.btn-outline-warning:hover {
+    color: #ffffff;
+    border-color: #222222;
+    background-color: #222222;
+   }
+.coluna1{
+    padding: 0; 
+    width: 50px;
+    height: 30px;
+}
+.coluna2{
+    padding: 0; 
+    width: 50px;
+    height: 30px;
+}
+.coluna3{
+    padding: 0; 
+    width: 50px;
+    height: 30px;
+}
+
+/* #b11{
+    display: block;
+    margin: 0px auto;
+    color: #222222;
+    justify-content: center;
+    width: 50px;
+    display: flex;
+    border-color: #222222;
+} */
+
 #btn1{
+    margin: auto;
+    justify-content: center;
+    width: 150px;
+    display: flex;
     color: rgb(88, 88, 88);
      border-color: #d0a465;
      background-color: #22616000;
   }
+  #jh{
+    font-size: 20px;
+    font-family: Arial;
+    padding: 60px;
+  }
+  #jh2{
+    
+    font-size: 20px;
+    font-family: Arial;
+    padding: 60px;
+  }
+
+  #o1{
+    font-size: 20px;
+    font-family: Arial;
+    padding: 60px;
+  }
+
+  #o2{
+    font-size: 20px;
+    font-family: Arial;
+    padding: 60px;
+  }
+  #l1{
+    font-size: 20px;
+    font-family: Arial;
+    padding: 60px;
+  }
+  #l2{
+    font-size: 20px;
+    font-family: Arial;
+    padding: 60px;
+  }
+
   #btn1:hover{
       color: white;
      background-color: #d0a465;;
