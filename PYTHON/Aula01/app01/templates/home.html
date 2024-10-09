@@ -7,10 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Seu email:</h2>
+    <h2>Olá: {{request.session.user_name}} </h2>
     <br>
     <br>
     <h1>Home Page</h1>
-    
+    <a href="{% url 'logout' %}">Sair</a>
 </body>
 </html>

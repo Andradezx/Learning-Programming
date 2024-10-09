@@ -1,54 +1,30 @@
-
-#divzinha{
-    text-align: left;
-    margin-top: 150px;
-    width: 100%; 
-    display: flex; 
-    justify-content: left; 
-    align-items: left; 
-
+.div01{
+    border: solid 2px rgb(179, 178, 178);
+    border-radius: 20px;
+    /* background-color: rgba(0, 0, 0, 0.822); */
+    background: linear-gradient(to right, #000000,  #c956f7); /* Degradê do rosa ao laranja */
+    width:fit-content;
+    padding: 100px 50px 50px 50px;
+    height: 490px;
    
 }
-
- /* input[type="email"],input[type="password"]{
-   width: 100%;
-   padding: 10px;
-   margin-bottom: 20px;
-   border: 1px;
- } */
-
-#email {
-    font-family:  Arial;
-    border-radius: 15px;
-    color: rgb(107, 107, 107);
-    border-color: rgb(190, 53, 253);
-    /* width: 200px; Define a largura do input */
+body {
+    padding-top: 200px;
+    margin: 0px;
+    justify-content: center;
+    display: flex;
 
 }
 
-
-#email:hover{
-box-shadow: 0 0 3px blueviolet;
+#email{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 250px;
+    border-color: rgb(43, 43, 43);
+    background-color: #313131;
 }
 
 #password{
-    font-family: Arial;
-    border-radius: 15px;
-    color: rgb(107, 107, 107);
-    border-color: rgb(190, 53, 253);
-    width: 150px;
-}
-
-#password:hover{
-    box-shadow: 0 0 3px blueviolet;
-    }
-
-#bo{
-   font-family: Arial;
-   color: rgb(0, 0, 0); 
-   border-color: blueviolet;
-}
-
-#bo:hover{
-    background-color: rgb(189, 43, 226);
+    width: 250px;
+    border-color: white;
+    background-color: #313131;
 }
