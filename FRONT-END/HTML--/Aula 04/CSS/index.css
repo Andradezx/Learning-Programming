@@ -90,3 +90,12 @@ h1, h3 {
     margin: 0; /* Remove a margem padrão */
 }
 
+.alta{
+    
+   margin-top: 100px;
+    display: grid;
+}
+#imgalta1{
+    width: 250px;
+    height: 50px;
+}
