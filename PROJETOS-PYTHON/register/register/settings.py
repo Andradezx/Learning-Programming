@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cadastro',
+    'cadastre',
     'register'
 ]
 
@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'register.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rregister_t15_23',
+        'NAME': 'register_t15_23',
         'USER': 'root',
         'PASSWORD': '',
         'HOST': 'localhost',
