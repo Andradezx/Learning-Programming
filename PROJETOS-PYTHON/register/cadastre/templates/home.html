@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link href="/PYTHON/Aula01/app01/static/home.css" rel="stylesheet" type="text/css"/> -->
+    <title>Document</title>
+</head>
+<body>
+    <h2>Olá: {{request.session.user_name}} </h2>
+    <br>
+    <br>
+    <h1>Home Page</h1>
+    <a href="{% url 'logout' %}">Sair</a>
+</body>
+</html>
