@@ -22,6 +22,14 @@ def login_user(request):
         
         if len(userpassword) <8:
             messages.error(request,'Voce precisa ter uma senha com mais de 8 digitos')
+
+        if User.objects.filter(email=useremail).exists():
+            messages.error(request, "Este email já está cadastrado.")
+            return render(request, 'index.html')
+        
+        if User.objects.filter(cpf=usercpf).exists():
+            messages.error(request, "Este cpf já está cadastrado.")
+            return render(request, 'index.html')
         
         try: 
             success = User.objects.get(email = username, password = userpassword)
