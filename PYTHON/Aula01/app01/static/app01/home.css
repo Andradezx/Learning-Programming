@@ -1,14 +1,18 @@
 .div01{
-    border: solid 2px rgb(179, 178, 178);
+    /* border: solid 2px #F0EB8D; */
+    box-shadow:  0 0 15px #222831;
     border-radius: 20px;
-    /* background-color: rgba(0, 0, 0, 0.822); */
-    background: linear-gradient(to right, #000000,  #c956f7); /* Degradê do rosa ao laranja */
+    /* background: linear-gradient(circle, #393E46, #00ADB5); */
+    /* background: radial-gradient(circle,  #00ADB5, #393E46); */
+    background: linear-gradient(45deg, #222831, #393E46);
     width:fit-content;
     padding: 100px 50px 50px 50px;
     height: 490px;
    
 }
 body {
+   background-color: #393E46;
+    background: radial-gradient(circle,  #00ADB5, #393E46);
     padding-top: 200px;
     margin: 0px;
     justify-content: center;
@@ -17,14 +21,78 @@ body {
 }
 
 #email{
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     width: 250px;
-    border-color: rgb(43, 43, 43);
-    background-color: #313131;
+    border-color: #FFE1FF;
+    background-color: #EEEEEE;
+    outline: none; /* Remove o contorno padrão */
+}
+
+#email:hover{
+  box-shadow: 0 0 10px #00ADB5;
+}
+
+#email:focus {
+    box-shadow: 0 0 5px rgba(248, 248, 248, 0.5); /* Sombra ao focar */
+    border-color: #00ADB5; /* Cor da borda ao focar */
+
+}
+.email2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
 }
 
 #password{
     width: 250px;
-    border-color: white;
-    background-color: #313131;
+    border-color: #FFE1FF;
+    background-color: #EEEEEE;
+}
+.password2 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+#password:hover{
+    box-shadow: 0 0 10px #00ADB5;
+  }
+  
+
+#password:focus {
+    box-shadow: 0 0 5px rgba(248, 248, 248, 0.5); /* Sombra ao focar */
+    border-color: #00ADB5; /* Cor da borda ao focar */
+
+}
+
+.logintext{
+    margin: 0;
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+
+.btn.btn-outline-primary{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-color: #00ADB5;
+    color: #EEEEEE;
+}
+
+.btn.btn-outline-primary:hover{
+    background-color: #00ADB5;
+}
+
+.cadastro{
+    text-align: center;
+    margin: 30px;
+color: white;
+}
+.cdcolor{
+    color: #00ADB5;
+    text-decoration: none;
 }

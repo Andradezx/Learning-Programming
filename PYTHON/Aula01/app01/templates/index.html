@@ -11,18 +11,23 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="div01">
-    <form method="POST">
     {% csrf_token %}
-    <br>
-    <label for="email">Email: </label>
-    <input type="text" class="form-control" id="email" name="email">
-     <br>
-    <label for="password" class="sr-only" >Senha: </label>
-    <input type="text" class="form-control" id="password" name="password">
-     <br>
-<button type="submit" class="btn btn-outline-primary" id="bo">Confirmar</button>
-</div>
+    <div class="div01">
+      <form method="POST">
+        {% csrf_token %}
+        <p class="logintext">LOGIN</p>
+        <br>
+        <label for="email" class="email2">Email</label>
+        <input type="text" class="form-control" id="email" name="email">
+        <br>
+        <label for="password" class="password2">Senha: </label>
+        <input type="text" class="form-control" id="password" name="password">
+        <br>
+        <button type="submit" class="btn btn-outline-primary" id="bo">Confirmar</button>
+        <div class="cadastro">
+          <p>Não possui um <a href="" class="cdcolor">Cadastro</a> </p> 
+         </div>
+        </div>
 </form>
 </body>
 </html>

@@ -19,19 +19,52 @@
   <div class="div01">
     <form method="POST">
       {% csrf_token %}
-      <p class="logintext">LOGIN</p>
+      <p class="logintext">Cadastro de Conta</p>
       <br>
+      <label for="name" class="name">Nome</label>
+      <input type="text" class="form-control" id="name" name="nameuser">
+      <br>
+      <div class="email_senha">
+      <div class="divemail">
       <label for="email" class="email2">Email</label>
       <input type="text" class="form-control" id="email" name="email">
       <br>
+    </div>
+    <div class="divpassword">
       <label for="password" class="password2">Senha: </label>
       <input type="text" class="form-control" id="password" name="password">
       <br>
+    </div>
+  </div>
+  <div class="address_phone">
+  <div>
+      <label for="address" class="address">Endereço</label>
+      <input type="text" class="form-control" id="address" name="address">
+      <br>
+    </div>
+    <div>
+      <label for="phone" class="phone">Celular</label>
+      <input type="text" class="form-control" id="phone" name="phone">
+      <br>
+    </div>
+  </div>
+  <div class="cpf_birth">
+  <div>
+      <label for="cpf" class="cpf">CPF</label>
+      <input type="text" class="form-control" id="cpf" name="cpf">
+      <br>
+    </div>
+    <div>
+      <label for="birth" class="birth">Data de Nascimento</label>
+      <input type="text" class="form-control" id="birth" name="birth">
+      <br>
+    </div>
+  </div>
       <button type="submit" class="btn btn-outline-primary" id="bo">Confirmar</button>
       <div class="cadastro">
-        <p>Não possui um <a href="" class="cdcolor">Cadastro</a> </p> 
-       </div>
+        <p>Já possui um <a href="" class="cdcolor">Cadastro</a> </p>
       </div>
+  </div>
 </body>
 
 </html>
