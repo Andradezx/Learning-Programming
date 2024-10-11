@@ -30,6 +30,7 @@ def login_user(request):
             return redirect('home')
         except User.DoesNotExist:
             messages.error(request,"Usuario Invalido")
+    return render(request, 'login.html')
 
 
 def logout_user(request):
@@ -39,6 +40,6 @@ def logout_user(request):
 
 def check_login(request):
     if 'userID' in request.session:
-        return render('home.html')
+        return render(request, 'home.html')
     else:
         return redirect('index')
