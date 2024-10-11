@@ -7,6 +7,7 @@ from django.contrib.auth import logout
 
 
 def register_user(request):
+
     if request.method == 'POST':
         form = UserForm(request.POST)
         
@@ -14,7 +15,7 @@ def register_user(request):
             form.save()
             return render(request, 'login.html')
       
-    return render(request, 'index.html',)  
+    return render(request, 'index.html')  
 
 
 
@@ -38,6 +39,6 @@ def logout_user(request):
 
 def check_login(request):
     if 'userID' in request.session:
-        return render(request,'home.html')
+        return render('home.html')
     else:
         return redirect('index')
