@@ -13,6 +13,7 @@ def register_user(request):
         
         if form.is_valid():
             form.save()
+            messages.success(request, 'Seus dados foram cadastrados')
             return render(request, 'login.html')
       
     return render(request, 'index.html')  
@@ -20,6 +21,7 @@ def register_user(request):
 
 
 def login_user(request):
+    render(request,'login.html')
     if request.method == 'POST':
         username = request.POST['email']
         userpassword = request.POST['password']
@@ -27,7 +29,8 @@ def login_user(request):
             success = User.objects.get(email = username, password = userpassword)
             request.session['userID'] = success.id
             request.session['user_name'] = success.name
-            return redirect('home')
+            messages.success(request,'Logado com uscesso')
+            return redirect('home')                        
         except User.DoesNotExist:
             messages.error(request,"Usuario Invalido")
     return render(request, 'login.html')
@@ -36,6 +39,7 @@ def login_user(request):
 def logout_user(request):
     logout(request)
     request.session.flush()
+    messages.success(request,'Voce desconectou')
     return redirect('index') 
 
 def check_login(request):
