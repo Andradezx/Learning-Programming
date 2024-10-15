@@ -8,13 +8,54 @@
     <link rel="stylesheet" href="/FRONT-END/HTML--/Aula 04/CSS/index.css">
     <title>Home</title>
 </head>
-<body class="bode">
+<body>
+    <header>
+        <div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Cine Luxury</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Site RJ</a>
+                  </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="">Site SP</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categoria
+                        </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Comedia</a></li>
+                      <li><a class="dropdown-item" href="#">Ação</a></li>
+                      <li><hr class="dropdown-divider" ></li>
+                      <li><a class="dropdown-item" href="#">Aventura</a></li>
+                      <li><a class="dropdown-item" href="#">Terror</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
     <div class="divt">
-    <h1>Cine Luxury</h1>
+    <h1 id="cine">Cine Luxury</h1>
     </div>
     <div class="divt2">
     <h2 id="h2m">Filmes</h2>
     </div>
+</div>
     <!-- <div class="info" align="center">
     <h3 class="h3bm">Bem-vindo ao Cine Trouxa!</h3>
     <p>Nós, do Cine Trouxa,<br> temos o prazer de oferecer a melhor experiência cinematográfica em dois dos estados mais vibrantes do Brasil: São Paulo e Rio de Janeiro! <br>
@@ -26,7 +67,7 @@
         Esperamos por você em uma de nossas salas! Não perca a chance de fazer parte dessa experiência única.</p> -->
 
         <div class="filmes" align="center" >
-        <h4>DESTAQUES</h4>
+        <h4 id="destaque">DESTAQUES</h4>
           <img src="https://th.bing.com/th/id/OIP.5blqn-y1_KzWGZiHRrykPgHaD5?w=319&h=180&c=7&r=0&o=5&pid=1.7" alt="img1" class="figure-img img-fluid rounded">
           <img src="https://th.bing.com/th/id/OIP.gPFXKagKzbWBnqrsFZGInwHaEu?w=269&h=180&c=7&r=0&o=5&pid=1.7" alt="img2" class="figure-img img-fluid rounded">
           <img src="https://th.bing.com/th/id/OIP.75l0W0P1iSzmHoODNdV4wAHaD2?w=324&h=180&c=7&r=0&o=5&pid=1.7" alt="img3" class="figure-img img-fluid rounded">
@@ -46,8 +87,18 @@
           <!-- <p>Teste</p> -->
         </div>
         <div class="alta">
-            <img src="https://th.bing.com/th/id/OIP.5blqn-y1_KzWGZiHRrykPgHaD5?w=319&h=180&c=7&r=0&o=5&pid=1.7" alt="img1" class="figure-img img-fluid rounded" id="imgalta1">
+            <h4 id="emalta">Em Alta</h4>
+            <img src="https://ligadoamusica.com.br/wp-content/uploads/2018/02/venom-filme-cartaz.jpg" alt="img1" class="rounded" >
+            <img src="https://cdn.kinocheck.com/i/v1oeffxkod.jpg" alt="img1" class="rounded" >  
+            <img src="https://en-images.kinorium.com/movie/1080/2316338.jpg?1683903869" alt="img1" class="rounded" >  
+            <img src="https://cdn.traileraddict.com/content/20th-century-fox/deadpool-poster.jpg" alt="img1" class="rounded" >  
+            <img src="https://strapi.api-tvcine.com/uploads/f092845fb1664b3f935fec6831c6f255.jpg" alt="img1" class="rounded" >
+            <img src="https://br.web.img3.acsta.net/pictures/18/05/10/01/53/2324639.jpg" alt="img1" class="rounded" >  
+            <img src="https://th.bing.com/th/id/OIP.Z2DXAA0Rv5OrZ7D5jinuUAAAAA?rs=1&pid=ImgDetMain" alt="img1" class="rounded" >
+            <img src="https://image.tmdb.org/t/p/original/9q3lk0hc9hJW7QGppnJm7u7pC7B.jpg" alt="img1" class="rounded" >
+            <img src="https://picfiles.alphacoders.com/349/349440.jpg" alt="img1" class="rounded" >
+            <img src="https://th.bing.com/th/id/R.6d783724f0bd7967a82e498afcf47556?rik=WEB2hra8p9gjQQ&riu=http%3a%2f%2fwww.impawards.com%2f2019%2fposters%2fjumanji_the_next_level.jpg&ehk=R1B4AABhr6dtk2N9PbzcU88dODSjfp2ELgQ9KX9jlSI%3d&risl=&pid=ImgRaw&r=0" alt="img1" class="rounded" >
         </div>
-    <!-- </div> -->
+    </div>
 </body>
 </html>
