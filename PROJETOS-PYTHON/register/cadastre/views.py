@@ -4,6 +4,39 @@ from .forms import UserForm
 from django.contrib import messages
 from django.http import HttpResponse
 from django.contrib.auth import logout
+from .utils import criptografia
+
+# jeito de fazer o cadastro de cliente sem o form
+
+# def register_user(request):
+#     if request.method =='POST':
+#         name_= request.POST.get('name')
+#         email_ = request.POST.get('email')
+#         password_= request.POST.get('password')
+#         address_ = request.POST.get('address')
+#         phone_= request.POST.get('phone')
+#         cpf_ = request.POST.get('cpf')
+#         date_birth_ =  request.POST.get('date_birth')
+
+#         crypt = criptografia(password_)
+
+#         client = User(
+#            name = name_,
+#            email = email_,
+#            password = password_,
+#            address = address_,
+#            phone = phone_,
+#            cpf = cpf_,
+#            date_birth = date_birth_
+#         )
+
+#         client.save()
+#         return render(request,'index.html')
+    #  return render(request,'index.html')
+# ==================================================
+
+
+
 
 
 def register_user(request):

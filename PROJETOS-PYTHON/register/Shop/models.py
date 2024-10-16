@@ -20,7 +20,7 @@ class Orders(models.Model):
     def __str__(self):
             return self.code_order
     
-class OrderItem(models.Model):
+class Orderitems(models.Model):
     code_order = models.ForeignKey(Orders, on_delete=models.CASCADE)  # Vários itens podem pertencer a um pedido
     code_product = models.ForeignKey(Products, on_delete=models.PROTECT)  # Referência ao produto
     qtd_product = models.IntegerField()  # Quantidade do produto
