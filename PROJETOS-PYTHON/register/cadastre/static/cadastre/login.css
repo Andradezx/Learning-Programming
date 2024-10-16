@@ -4,7 +4,8 @@
     border-radius: 20px;
     /* background: linear-gradient(circle, #393E46, #00ADB5); */
     /* background: radial-gradient(circle,  #00ADB5, #393E46); */
-    background: linear-gradient(45deg, #222831, #393E46);
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
     width:fit-content;
     padding: 100px 50px 50px 50px;
     height: 490px;
