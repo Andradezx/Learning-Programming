@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cadastre',
-    'register'
+    'register',
+    'Shop'
 ]
 
 MIDDLEWARE = [
@@ -126,5 +127,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'cadastre/static')
+    os.path.join(BASE_DIR, 'static')
 ]
