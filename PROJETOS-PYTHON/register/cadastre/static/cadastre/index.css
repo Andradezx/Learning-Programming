@@ -5,7 +5,9 @@
     border-radius: 20px;
     /* background: linear-gradient(circle, #393E46, #00ADB5); */
     /* background: radial-gradient(circle,  #00ADB5, #393E46); */
-    background: linear-gradient(45deg, #222831, #393E46);
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    
     width: 1000px;
     padding: 100px 50px 50px 50px;
     height: 700px;
@@ -13,7 +15,7 @@
 }
 
 body {
-    background: radial-gradient(circle,  #222831, #222831);
+    background-image: linear-gradient( #4158D0 0%, #C850C0 46%, #FFCC70 100%);
     /* background-color: #393E46; */
     padding-top: 140px;
     justify-content: center;
