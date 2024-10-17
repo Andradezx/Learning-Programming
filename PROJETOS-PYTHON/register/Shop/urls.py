@@ -1,6 +1,8 @@
 from django.urls import path
-from .views import index_render
+from .views import index_render,start_page
 
 urlpatterns = [
-    path('', index_render, name='index')
+    path('loja', index_render, name='shop'),
+    path('start/',start_page, name='start')
+
     ]
