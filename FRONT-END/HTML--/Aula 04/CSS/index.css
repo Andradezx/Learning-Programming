@@ -34,6 +34,16 @@
     color: #000000;
 }
 
+.btn.btn-outline-success{
+    background-color: #00000000;
+    border-color: #000000;
+    color: #000000;
+}
+.btn.btn-outline-success:hover{
+    background-color: #000000;
+    color: white;
+}
+
 .espaco{
     text-align: center;
     color: white;
@@ -41,8 +51,9 @@
     width: 1000px;
     margin: auto;
     height: 10px;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(244,43,236,1) 35%, rgba(170,100,204,1) 100%);
+    background-color: #000000;
+    background-image: linear-gradient(43deg, #000000 0%, #141414 46%, #000000 100%);
+    
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -155,6 +166,7 @@ h1, h3 {
     color: rgba(244,43,236,1);
 }
 body{ 
-background: rgb(0,0,0);
-background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(56,56,56,1) 20%, rgba(0,0,0,1) 100%);
+    background-color: #000000;
+    background-image: linear-gradient(43deg, #000000 0%, #000000 46%, #000000 100%);
+    
 }

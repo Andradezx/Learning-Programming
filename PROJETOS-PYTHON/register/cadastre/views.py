@@ -21,7 +21,7 @@ def register_user(request):
         print(f"Nome capturado: {name_}")  # Debugging
         print(f"Dados recebidos: {request.POST}")
 
-        senha = request.POST.get('password')
+
         crypt = criptografia(password_)
 
         client = User(
@@ -55,49 +55,18 @@ def register_user(request):
 
 
 
-# def login_user(request):
-#     # render(request,'login.html')
-#     if request.method == 'POST':
-#         useremail = request.POST['email']
-#         userpassword = request.POST['password']
-#         try: 
-#             # success = User.objects.get(email = useremail, password = userpassword)
-#               user = User.objects.get(email = useremail)
-#               if check_password(userpassword, user.password):
-#                 request.session['userID'] = user.id
-#                 request.session['user_name'] = user.name
-#                 messages.success(request,'Logado com uscesso')
-#                 return redirect('home')   
-#                 print('chegou aqui1')
-#               messages.error(request, 'Senha inválida')                               
-#         except User.DoesNotExist:
-#          messages.error(request,"Usuario Invalido")
-#         return render(request, 'login.html')
-# print('chegou aqui2') 
-
 def login_user(request):
     if request.method == 'POST':
-        useremail = request.POST['email']
+        username = request.POST['email']
         userpassword = request.POST['password']
         try: 
-            # success = User.objects.get(email = useremail, password = userpassword)
-            user = User.objects.get(email=useremail)  # Busca o usuário pelo email
-            print('Usuário encontrado:', user)  # Debugging
-            
-            # if check_password(userpassword, user.password):  # Verifica a senha
-            request.session['userID'] = user.id  # Armazena o ID do usuário na sessão
-            request.session['user_name'] = user.name  # Armazena o nome do usuário na sessão
-            messages.success(request, 'Logado com sucesso!')  # Mensagem de sucesso
-            print('Redirecionando para home...')  # Debugging
-            return redirect('home')  # Redireciona para a página inicial
-            # else:
-            messages.error(request, 'Senha inválida')  # Mensagem de erro para senha inválida
+            success = User.objects.get(email = username, password = userpassword)
+            request.session['userID'] = success.id
+            request.session['user_name'] = success.email
+            return redirect('home')
         except User.DoesNotExist:
-            messages.error(request, "Usuário inválido")  # Mensagem de erro se o usuário não for encontrado
-    return render(request, 'login.html')  # Renderiza a página de login
-
-
-
+            messages.error(request,"Usuario Invalido")
+    return   render(request,'index.html')
 
 
 def logout_user(request):
